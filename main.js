@@ -74,11 +74,11 @@ app.on('ready',function(){
     })
 })
 
-ipc.on('update-progress',function(event,arg){
-  if(process.platform==='darwin'){
-    window.setProgressBar(arg);
-  }
-})
+// ipc.on('update-progress',function(event,arg){
+//   if(process.platform==='darwin'){
+//     window.setProgressBar(arg);
+//   }
+// })
 // app.on('window-all-closed',function() {
 //   if(process.platform!=='darwin'){
 //     app.quit();
