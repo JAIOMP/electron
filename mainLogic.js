@@ -1,3 +1,4 @@
+var lodash = require("lodash");
 var MainTable = function() {
 	for (var i = 65; i < 74; i++) {
 		this[String.fromCharCode(i)] = (function makeArray(){
@@ -8,6 +9,7 @@ var MainTable = function() {
 			return numbers;
 		})();
 	}
+	this.usedCoordinates = [];
 };
 
 var player = function(name,MainTable){
@@ -15,4 +17,9 @@ var player = function(name,MainTable){
 	this.MainTable = MainTable;
 }
 var gameTable = new MainTable();
-		console.log(gameTable);
+
+var between = lodash.random(2,5);
+console.log(between);
+
+
+	
