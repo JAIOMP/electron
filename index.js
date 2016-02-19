@@ -10,12 +10,13 @@ var interval = function() {
 		}
 		else{
 		ipc.send('update-progress',0);
+		window.location.href = "nextPage.html"
 		clearInterval(progress);
 		}
 	},1000);
 }
 ipc.on('ping',function(message){
-	console.log(message)
+	console.log(message);
 })
 
 // var ipc = require('ipc');
